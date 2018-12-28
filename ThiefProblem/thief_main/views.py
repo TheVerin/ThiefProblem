@@ -50,9 +50,9 @@ def final(request):
 
         a = mass_checker(mass_1, mass_2, car_load)
         b = profit_counter(a, prize_1, prize_2)
-        num_a = b['NumberOfA']
-        num_b = b['NumberOfB']
-        res = b['Profit']
+        num_a = b.iloc[0]['NumberOfA']
+        num_b = b.iloc[0]['NumberOfB']
+        res = b.iloc[0]['Profit']
 
     obj = Thief.objects.create(
         thief_name=thief_name,
