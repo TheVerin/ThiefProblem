@@ -7,8 +7,8 @@
         <section>
             <div>
                 <form>
-                    <input type="text" placeholder="Your name, Thief..." name="thief_name"><br>
-                    <input type="text" placeholder="How big is your car (kg):" name="car_load">
+                    <input type="text" placeholder="Your name, Thief..." name="thief_name">
+                    <input type="text" placeholder="How big is your car (kg):" name="car_load"><br><br>
                     <input type="text" placeholder="First jewelry:" name="name_1"><br>
                     <input type="text" placeholder="Mass:" name="mass_1">
                     <input type="text" placeholder="How much worth is it:" name="prize_1">
@@ -18,14 +18,15 @@
                     <input type="text" placeholder="How much worth is it:" name="prize_2">
                     <br>
                     <button>Optimize!</button>
+                    <br><br>
                 </form>
             </div>
             <div>
                 <form>
-                    <p>Best solution for you:</p><br>
-                    <p>How many first jewel?: {{ result['NumberOfA'] }}</p><br>
-                    <p>How many second jewel?: {{ result['NumberOfB'] }}</p><br>
-                    <p>Your profit: {{ result['Profit'] }}</p>
+                    <p>Best solution for you:</p>
+                    <p>How many first jewel?: {{ num_a }}</p>
+                    <p>How many second jewel?: {{ num_b }}</p>
+                    <p>Your profit: {{ res }}</p>
                 </form>
             </div>
         </section>
