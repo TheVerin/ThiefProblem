@@ -3,7 +3,33 @@
     <head>
         <title>Count your profit!</title>
         <style>
+        html{
+        background-image: url("https://cdn1.thr.com/sites/default/files/imagecache/landscape_928x523/2015/12/homealone.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        }
 
+        .text{
+        position: absolute;
+        top: 0px;
+        right: 50px;
+        color: white;
+        font-family: courier new;
+        }
+
+        button:hover{
+        border-radius: 7px;
+        background-color: black;
+        color: white;
+        }
+
+        #p1{
+        font-size: 30px
+        }
+
+        #p2{
+        font-size: 24px
+        }
         </style>
     </head>
     <body>
@@ -24,12 +50,12 @@
                     <br><br>
                 </form>
             </div>
-            <div>
+            <div class="text">
                 <form>
-                    <p>Best solution for you:</p>
-                    <p>First jewel amount: {{ num_a }}</p>
-                    <p>Second jewel amount: {{ num_b }}</p>
-                    <p>Your profit: {{ res }}</p>
+                    <p id="p1"><b>Best solution for you:</b></p>
+                    <p id="p2">First jewel amount: {{ num_a }}<br>
+                    Second jewel amount: {{ num_b }}<br>
+                    <b><ins>Your profit: {{ res }}</ins></b></p>
                 </form>
             </div>
         </section>
